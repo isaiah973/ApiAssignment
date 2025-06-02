@@ -10,7 +10,7 @@ const getApi = async () => {// we are telling the function to run first by async
     const response = await fetch("https://dummyjson.com/products");
     const data = await response.json();
     const product = data.products;
-    displayProducts((product));
+    displayProducts(product);
   } catch(error) {
     console.error("Error", error);
   }
@@ -24,17 +24,16 @@ function displayProducts(products) {
     li.className = "product";
     
     li.innerHTML = `
-          <p><strong>Brand</strong>: ${product.brand}</p><span class = "stock">${product.availabilityStatus}</span>
+          <span class = "stock">${product.availabilityStatus}</span>
           <img src= "${product.thumbnail}" alt="${product.title}">
           <h3>${product.title}</h3>
+          <p><strong>Brand</strong>: ${product.brand}</p>
           <p>Price: $${product.price}</p>
           <p>${product.description.slice(0, 60)}...</p>
           <p>review: ${product.reviews[0].comment}</p>
           <p><strong>Shipping Information</strong>: ${product.shippingInformation}</p>
-          `;//add the brand, availabilty status and shipping information
+          `;
           
-          
-  
     list.appendChild(li);
   });
 

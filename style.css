@@ -42,12 +42,12 @@ font-size: 18px;
 }
 
 .product p {
-margin: 5px 0;
-font-size: 14px;
-color: #333;
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
 }
 .stock {
-  background-color: rgb(97, 112, 108);
+  background-color: rgb(94, 141, 128);
   display: inline-block;
   color: white;
   font-size: 12px;
