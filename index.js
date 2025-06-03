@@ -28,10 +28,10 @@ function displayProducts(products) {
           <img src= "${product.thumbnail}" alt="${product.title}">
           <h3>${product.title}</h3>
           <p><strong>Brand</strong>: ${product.brand}</p>
-          <p>Price:<span class = "pricing">$${product.price}</span></p>
-          <p>${product.description.slice(0, 60)}...</p>
+          <p><span class = "pricing">$${product.price}</span></p>
           <p class = "shipping">${product.shippingInformation}</p>
-          <p>Review: ${product.reviews[0].comment}</p>
+          <p>${product.description.slice(0, 60)}...</p>
+          <p>Review: <span class = "reviews">${product.reviews[0].comment}</span></p>
           `;
           
     list.appendChild(li);

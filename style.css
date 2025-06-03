@@ -10,6 +10,7 @@ text-align: center;
 .pricing {
   color: rgb(9, 188, 216);
   font-weight: 700;
+  font-size: 20px;
 }
 .shipping {
   opacity: 0.5;
@@ -45,7 +46,11 @@ border-radius: 5px;
 margin: 10px 0 5px;
 font-size: 18px;
 }
-
+.reviews {
+  opacity: 0.8;
+  font-style: italic;
+  font-size: 12px;
+}
 .product p {
   margin: 5px 0;
   font-size: 14px;
